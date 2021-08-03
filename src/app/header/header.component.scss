@@ -57,15 +57,97 @@
 
     }
 }
+.toogler{
+    display: none;
+}
 
 
 @media screen and (max-width: 500px){
- 
+ .section-2{
 
-    .wrapper{
-       display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    .toogler{
+       
+        display: block;
+        position:absolute;
         
-        
+       
+        top: 0;
+        right: 0;
+        width: 44px;
+        height: 44px;
+        z-index: 2;
+        opacity: 0;
+        cursor:pointer;
     }
+    .list-menu{
+        display: none;
+    }
+
+
+
+    .hamburger{
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        height: 44px;
+        width: 44px;
+        background: transparent;
+        
+        
+        div{
+           position: fixed;
+           margin-top: 10px;
+           margin-right: 16px;
+           right:0;
+           width: 18px;
+           height: 2px;
+           z-index: 2;
+           background-color: var(--color-3);
+        
+        transition: all 0.5s ease;
+        &::before, 
+        &::after{
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 18px;
+            height: 2px;
+            background: inherit;
+            top: -5px;
+        }
+        &::after{top: 5px;}
+       }
+
+
+    }
+    .toogler:checked{
+        &~.hamburger{
+            div{
+                transform:rotate(135deg);
+                &::before,
+                &::after{
+                    top: 0;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        &~.list-menu{
+            display: block;
+            background-color: white;
+            line-height: 2rem;
+            
+        }
+    }
+    
+}
+
+
     
 }
