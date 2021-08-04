@@ -1,9 +1,12 @@
 .wrapper{
     padding: 2rem 0rem;
     color: var(--color-3);
-    margin: 150px 10%;
+    padding: 150px 10%;
     align-items: center;
     width: 100%;
+   .foto{
+       text-align: right;
+   }
     
     
 }
@@ -95,7 +98,7 @@ img{
  
 
     .wrapper{
-        margin: 150px 0;
+       
         text-align: center;
         flex-direction: column;
        
