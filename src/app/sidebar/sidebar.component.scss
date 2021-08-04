@@ -89,18 +89,27 @@ nav{
     }
 }
 img{
-    width:400px ;
+    max-width: 90% ;
     border-radius: 20%;
 }
 
 
 @media screen and (max-width: 500px){
+    .icons{
+        text-align: center;
+    }
  
 
     .wrapper{
        
         text-align: center;
         flex-direction: column;
+        padding-bottom: 80px;
+
+        .foto{
+            text-align: center;
+            padding-top: 30px;
+        }
        
         
         
