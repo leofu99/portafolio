@@ -2,7 +2,7 @@
     color: var(--color-3);
 }
 #title{
-    margin-bottom: 100px;
+    margin-bottom: 0;
     font-weight: bold;
 }
 h2{
@@ -25,6 +25,9 @@ h3{
     color: var(--color-2);
     font-weight: bold;
     padding-bottom: 30px;
+}
+.row{
+    align-items: center;
 }
 
 .portfolio-modal{
@@ -54,7 +57,7 @@ ul{
 
 }
 img,iframe{
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 20px;
 }
 .botones{
@@ -80,4 +83,17 @@ a{
     width: 100%;
     z-index: -100;
     display:table;
+}
+.celular{
+    max-height: 400px;
+    width: auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 500px){
+    #celular{
+    max-height: 100%;
+    width: auto;
+    }
 }
