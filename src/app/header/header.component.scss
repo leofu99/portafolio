@@ -39,14 +39,14 @@
         
 
         .item-menu{
-            color:black;
+            color:var(--color-3);
             opacity: 0.8;
             font-weight: bold;
             padding: 0 1rem;
             cursor: pointer;
             text-decoration: none;
             
-            font-size: 1.35rem;
+            font-size: 1.37rem;
             font-stretch: normal;
             &:hover{
                 color: var(--color-2);

@@ -1,0 +1,46 @@
+footer{
+    color:var(--color-3);
+}
+.contacto{
+    text-align: center;
+    h2{font-size: 3rem;
+        margin: 70px;
+    }
+}
+
+.footer-address{
+    text-align: center;
+    text-decoration: none;
+
+
+}
+.each-icon{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 2rem;
+    border-color: var(--color-2);
+    margin:0 40%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-3);
+}
+.address-footer-item{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 50px -4px rgba(0,123,255,0.41); 
+box-shadow: 0px 0px 50px -4px rgba(0,123,255,0.41);
+&:hover{
+    a{
+        color: var(--color-2);
+        font-weight: bold;
+    }
+}
+  
+}
