@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=works.component.css.map */
+* {
+  color: var(--color-3);
+}
+
+#title {
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--color-3);
+  text-align: center;
+}
+
+p {
+  color: var(--color-3);
+  font-weight: bold;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: justify;
+}
+
+h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--color-2);
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.portfolio-modal {
+  padding: 100px 0;
+}
+
+ul {
+  text-align: justify;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  padding: 0;
+}
+
+ul .colu {
+  margin: 0px 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 4px 0px;
+  display: inline-block;
+}
+
+ul .colu span {
+  border: 2px solid var(--color-2);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+img, iframe {
+  max-width: 90%;
+  border-radius: 20px;
+}
+
+.botones {
+  text-align: justify;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.botones a {
+  color: white;
+  background-color: var(--color-2);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.fondo {
+  width: 100%;
+  z-index: -100;
+  display: table;
+}
+/*# sourceMappingURL=works.component.css.map */

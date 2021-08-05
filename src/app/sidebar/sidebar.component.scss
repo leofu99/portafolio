@@ -1,23 +1,73 @@
 .wrapper{
+    
     padding: 2rem 0rem;
     color: var(--color-3);
     padding: 150px 10%;
     align-items: center;
     width: 100%;
+ 
+   
+
+    &::before{
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    background-image:url(/assets/fondo.jpeg);
+    background-size:cover;
+    background-position:left;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+   left: 0;
+   bottom: 0;
+    opacity: 0.2;
+   
+    
+ }
+   
+    
+    
+   
+    
+   // background: linear-gradient(blue, orange);
+    
    .foto{
        text-align: right;
+       position: relative;
+      
+      
+     
    }
+
+   .contenedor{
+       
+    position: relative;
+   }
+
+
     
     
 }
+
+   
+   
+
+
+
+
 .title{
     font-size: 4rem;
+  
 }
 h1,h2{
+   
     margin: 0;
 }
 
 .pre-title{
+    
     padding: 1rem 0;
     
   
@@ -91,6 +141,7 @@ nav{
 img{
     max-width: 90% ;
     border-radius: 20%;
+    
 }
 
 
