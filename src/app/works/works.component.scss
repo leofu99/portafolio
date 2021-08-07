@@ -82,6 +82,7 @@ ul{
 img,iframe{
     max-width: 100%;
     border-radius: 20px;
+    
 }
 .botones{
 
@@ -125,5 +126,9 @@ a{
     #celular{
     max-height: 100%;
     width: auto;
+    }
+
+    iframe{
+        height: auto;
     }
 }

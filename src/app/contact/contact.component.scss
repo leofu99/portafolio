@@ -1,4 +1,5 @@
 footer{
+    
     color:var(--color-3);
 }
 .contacto{
@@ -11,19 +12,20 @@ footer{
 .footer-address{
     text-align: center;
     text-decoration: none;
+    justify-content: center;
+    margin-bottom: 10px;
 
 
 }
-.each-icon{
+.uil{
     text-align: center;
-    width: 100px;
-    height: 100px;
+   
     border: 1px solid;
     border-radius: 50%;
     line-height: 100px;
     font-size: 2rem;
     border-color: var(--color-2);
-    margin:0 40%;
+    padding:25px;
 }
 
 a{
@@ -31,11 +33,15 @@ a{
     color: var(--color-3);
 }
 .address-footer-item{
+    height:200px;
+
     align-items: center;
     text-align: center;
     justify-content: center;
     -webkit-box-shadow: 0px 0px 50px -4px rgba(0,123,255,0.41); 
-box-shadow: 0px 0px 50px -4px rgba(0,123,255,0.41);
+    box-shadow: 0px 0px 50px -4px rgba(0,123,255,0.41);
+    border-radius: 5%;
+
 &:hover{
     a{
         color: var(--color-2);
@@ -43,4 +49,102 @@ box-shadow: 0px 0px 50px -4px rgba(0,123,255,0.41);
     }
 }
   
+
+
+}
+
+.caja{
+    margin :0;
+    margin-bottom: 10%;
+}
+
+
+.icono{
+ 
+    text-decoration: none;
+    color:var(--color-3);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    text-align: center;
+    i{
+       padding:0;
+       margin:0 0;
+        font-size: 2rem;
+        border:none;
+        &:hover{
+            color: var(--color-2);
+            background-color: var(--color-3);
+            border-radius: 5px;
+        }
+    }
+}
+li{
+    list-style: none;
+    display:inherit;
+}
+ul{
+
+display: inline;
+text-align: center;
+padding-inline-start: 0px;
+}
+
+.iconitos{
+    //justify-content: center;
+    text-align: center;
+    i{
+        margin:0;
+    }
+}
+
+.contactform{
+    padding:25px;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    position: relative
+}
+
+#msgSubmit{
+    text-align: center;
+}
+
+#form{
+
+    div{
+        text-align: center;
+        text-justify: center;
+    }
+}
+input, textarea, button{
+width: 100%;
+border-color: var(--color-2);
+color: var(--color-3);
+border-radius: 10px;
+margin: 10px
+
+}
+
+textarea{
+    height: 100px;
+}
+button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    &:hover{
+        background-color: var(--color-2);
+        color: white;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    input, textarea{
+        padding: 1% 10%;
+
+
+    }
+
 }

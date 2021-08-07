@@ -8,8 +8,8 @@
                 <div class="col-sm-12 footer-address">
                     <div class="row">
                  
-                        <div class="col-sm-12 col-md-6">
-                            <div class="address-footer-item" data-wow-duration="0.8s" data-wow-delay="0.5s">
+                        <div class="col-sm-12 col-md-6 caja">
+                            <div class="address-footer-item" >
                                 <div class="each-icon">
                                     <i class="uil uil-fast-mail"></i>
                                 </div>
@@ -20,8 +20,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="address-footer-item dark-bg shadow-1 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+                        <div class="col-sm-12 col-md-6 caja">
+                            <div class="address-footer-item">
                                 <div class="each-icon">
                                     <i class="uil uil-phone"></i>
                                 </div>
@@ -34,44 +34,51 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div>
-                    <form id="contactForm" class="single-form quate-form wow fadeInUp" data-toggle="validator">
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <input name="name" class="contact-name form-control" id="name" type="text" placeholder="First Name" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <input name="name" class="contact-email form-control" id="L_name" type="text" placeholder="Last Name" required>
-                            </div>
-                            <div class="col-sm-12">
-                                <input name="name" class="contact-subject form-control" id="email" type="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="col-sm-12">
-                                <textarea class="contact-message" id="message" rows="6" placeholder="Your Message" required></textarea>
-                            </div>
-                            <!-- Subject Button -->
-                            <div class="btn-form col-sm-12">
-                                <button type="submit" class="btn btn-fill btn-block" id="form-submit">Send Message</button>
-                            </div>
-                        </div>
+                    <form id="form" action="" class="form" >
+                       
+                             
+                           
+                                <input name = "name"id="name"required type="text" placeholder="nombre" >
+                          
+                                <input  name = "email" id="email" type="email" placeholder="Correo" required>
+                           
+                                <textarea  name = "mensaje" placeholder="Tu mensaje" required></textarea>
+                           
+                                <button type="submit" id="botont">Enviar mensaje</button>
+                           
+                      
                     </form>
                 </div>
                 
-                <div class="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                    <div class="row">
-                        <div class="col-sm-6">
-
+                
+                    
+                 
+                        <div class="iconitos">
+                            <div>
+                                <ul class="social-icon">
+                                    <li><a class="icono" href="https://www.linkedin.com/in/-leonardo-fuentes-bohorquez/" target="_blank"> <i class="uil uil-linkedin"></i></a></li>
+                                    <li><a class="icono" href="https://github.com/leofu99" target="_blank"><i class="uil uil-github"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <ul class="social-icon">
-                                <li><a href="https://www.linkedin.com/in/-leonardo-fuentes-bohorquez/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://github.com/leofu99" target="_blank"><i class="fa fa-github"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    
+                
             </div>
         </div>
     </div>
 </footer> 
+<script>
+
+    const $form = document.querySelector('#form')
+
+
+    $form.addEventListener('submit',handleSubmit())
+
+    function handleSubmit(event){
+        event.preventDefault()
+    }
+
+</script>
