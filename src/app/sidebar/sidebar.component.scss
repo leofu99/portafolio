@@ -34,8 +34,21 @@
    // background: linear-gradient(blue, orange);
     
    .foto{
+    align-items: center;
+    display: flex;
+    justify-content: center;
        text-align: right;
        position: relative;
+       background-color: rgb(243, 236, 236);
+       border-radius: 25px;
+    
+   
+       box-shadow: 10px 10px 192px -1px rgba(0,0,0,0.67);
+-webkit-box-shadow: 10px 10px 192px -1px rgba(0,0,0,0.67);
+-moz-box-shadow: 10px 10px 192px -1px rgba(0,0,0,0.67);
+box-shadow: 10px 10px 192px -1px rgba(0,0,0,0.67) inset;
+-webkit-box-shadow: 10px 10px 192px -1px rgba(0,0,0,0.67) inset;
+-moz-box-shadow: 10px 10px 192px -1px rgba(0,0,0,0.67) inset;
       
       
      
